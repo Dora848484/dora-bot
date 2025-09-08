@@ -1,28 +1,22 @@
+# XAVIABOT 
 
-# XaviaBot  
-**v2.1.4** | **By**: RFS-ADRENO | **Modded by**: rapido  
+[![Original](https://img.shields.io/badge/Original-XaviaTeam-blue?style=flat-square)](https://github.com/XaviaTeam/XaviaBot)
 
-🔗 **Sources**:  
-- [Original](https://github.com/XaviaTeam/XaviaBot)  
-- [Config](https://github.com/daikirapido/Xaviabot/blob/main/config/config.main.json)  
+> Modified version. Files may contain bugs due to changes.
+> **Do not remove credits.** Risk of global ban if modified. Shared on official XaviaBot server.
 
-## Changes  
-✅ Fixed login  
-✅ Added commands  
+***Fixed by Rapido***
 
-## Quick Config  
-```json
-{
-  "APPSTATE_PATH":"./appstate.json",
-  "PREFIX":"!",
-  "timezone":"Asia/Manila",
-  "FCA_OPTIONS":{
-    "forceLogin":true,
-    "userAgent":"Mozilla/5.0 (Linux; Android 9)..."
-  }
-}
-```
 
-💡 Replace `!` with your prefix  
-💡 Use valid fbstate in appstate.json  
+## Setup
+1. Clone repo
+2. `npm install`
+3. Configure env
+4. `npm start`
 
+## Disclaimer
+Modified version. Use at your own risk.
+
+## Credits
+- Original: [XaviaTeam](https://github.com/XaviaTeam)
+- Fixes: Rapido
