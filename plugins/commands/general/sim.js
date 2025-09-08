@@ -1,5 +1,7 @@
 import axios from 'axios';
 
+const key = ''; /// get your key on official API to make it works.
+
 const config = {
   name: "sim",
   credits:"renzmansueto"
@@ -10,7 +12,7 @@ const reply = async function({eventData, message}) {
   const q = message.body;
   try {
     
-     const {data: result} = await axios.get(`https://simsimi-api-pro.onrender.com/sim?query=${q}`)
+     const {data: result} = await axios.get(`https://simsimi-api-pro.onrender.com/sim?query=${q}&apikey=${key}`)
     await message.react("");
     return message.reply(result.respond).then(msg => msg.addReplyEvent({callback: reply, author: message.senderID}))
     
@@ -25,7 +27,7 @@ const onCall = async function({args,message}) {
   if(!q) return message.reply("Ano?");
   try {
     
-     const {data: result} = await axios.get(`https://simsimi-api-pro.onrender.com/sim?query=${q}`)
+     const {data: result} = await axios.get(`https://simsimi-api-pro.onrender.com/sim?query=${q}&apikey=${key}`)
     return message.reply(result.respond).then(msg => msg.addReplyEvent({callback: reply, author: message.senderID}))
     
   } catch (e) {
